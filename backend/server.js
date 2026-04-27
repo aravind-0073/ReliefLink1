@@ -24,10 +24,8 @@ initFirebase();
 
 // Middleware
 app.use(cors({
-  origin: [
-    "http://localhost:3000",
-    "https://relieflink.netlify.app"
-  ],
+  origin:
+    "https://relieflink.netlify.app",
   credentials: true
 }));
 app.use(express.json());
